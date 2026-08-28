@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="el">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex, nofollow">
-<meta name="description" content="Dev preview - redesign proposal for AZ Clean. Not the live site.">
-<title>AZ Clean — Πρόταση Ανασχεδιασμού</title>
+<!DOCTYPE html><html lang="el"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="robots" content="noindex, nofollow"><meta name="description" content="Dev preview - redesign proposal for AZ Clean. Not the live site."><title>AZ Clean — Πρόταση Ανασχεδιασμού</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500;1,6..72,600&family=Inter:wght@400;500;600;700;800&display=swap">
@@ -173,7 +166,7 @@ section{padding:112px 0}
 /* proof / slider */
 .proof-note{color:var(--on-dark-45);font-size:12.5px;margin-top:36px}
 .proof-main{margin-bottom:22px}
-.proof-row{display:grid;grid-template-columns:1.28fr .95fr;gap:22px}
+.proof-row{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
 @media(max-width:760px){.proof-row{grid-template-columns:1fr}}
 .cmp{position:relative;width:100%;overflow:hidden;touch-action:pan-y;cursor:ew-resize;background:#0E0C08;box-shadow:var(--shadow-2);border-radius:5px;user-select:none;-webkit-user-select:none;aspect-ratio:16/10}
 .cmp.tall{aspect-ratio:4/5}
@@ -194,6 +187,10 @@ section{padding:112px 0}
 .shot .tag{position:absolute;top:16px;left:16px;background:rgba(255,255,255,.92);color:#15130E;padding:6px 12px;font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;border-radius:2px}
 .cap{margin-top:14px;font-size:14px;color:var(--on-dark-70)}
 .cap b{display:block;color:var(--on-dark);font-size:15.5px;font-family:var(--sans);letter-spacing:-.01em;margin-bottom:2px}
+.stat-panel{position:relative;width:100%;aspect-ratio:4/5;border-radius:5px;overflow:hidden;box-shadow:var(--shadow-2);background:linear-gradient(150deg,var(--gold-deep),var(--gleam));color:#15130E;display:flex;flex-direction:column;justify-content:center;gap:10px;padding:34px}
+.stat-panel .stars{color:#15130E;letter-spacing:3px;font-size:17px;opacity:.72}
+.stat-panel .num{font-family:var(--serif);font-style:italic;font-weight:600;font-size:clamp(44px,6vw,58px);line-height:1}
+.stat-panel p{font-size:14.5px;font-weight:600;max-width:22ch;line-height:1.5}
 
 /* services */
 .split{display:grid;grid-template-columns:.62fr 1.38fr;gap:64px}
@@ -212,6 +209,32 @@ section{padding:112px 0}
 .step .num{font-family:var(--serif);font-style:italic;font-size:30px;font-weight:600;color:var(--gold-deep);opacity:.55;line-height:1.1}
 .step h3{margin-bottom:6px}
 .step p{color:var(--text-70);font-size:15.5px;max-width:60ch}
+
+/* process cards (photo + overlapping label, azclean.ca-style) */
+.pcards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+@media(max-width:820px){.pcards{grid-template-columns:1fr;gap:32px}}
+.pcard-media{position:relative;aspect-ratio:4/5;border-radius:8px;overflow:hidden;box-shadow:var(--shadow-2);margin-bottom:20px}
+.pcard-media img{width:100%;height:100%;object-fit:cover}
+.pcard-media.solid{background:linear-gradient(150deg,var(--gold-deep),var(--gleam));display:flex;align-items:center;justify-content:center}
+.pcard-media.solid .pcard-glyph{font-family:var(--serif);font-style:italic;font-weight:600;font-size:clamp(56px,7vw,74px);color:#15130E;opacity:.85}
+.pcard-tab{position:absolute;left:16px;bottom:16px;background:var(--ink);color:var(--linen);padding:9px 15px;border-radius:4px;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;box-shadow:var(--shadow-1)}
+.pcard-media.solid .pcard-tab{background:rgba(21,19,14,.88)}
+.pcard h3{margin-bottom:6px}
+.pcard p{color:var(--text-70);font-size:15px;max-width:42ch}
+
+/* final CTA — full-bleed gold band */
+.cta-gold{background:linear-gradient(120deg,var(--gold-deep),var(--gleam))}
+.cta-gold-inner{padding:80px 28px;display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center;max-width:1240px;margin:0 auto}
+@media(max-width:940px){.cta-gold-inner{grid-template-columns:1fr;padding:56px 20px;gap:28px}}
+.cta-gold *{color:#15130E}
+.cta-gold .eyebrow{color:#15130E;opacity:.62}
+.cta-gold p{opacity:.78;margin-top:12px;max-width:48ch;font-weight:500}
+.cta-gold .acts{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.cta-gold .btn-dark{background:#15130E;color:#F5F1E8!important}
+.cta-gold .btn-dark *{color:#F5F1E8!important}
+.cta-gold .btn-ghost{border-color:rgba(21,19,14,.4)}
+.cta-gold .btn-ghost:hover{background:rgba(21,19,14,.1)}
+.cta-gold .sched b{display:block;font-weight:800;margin:14px 0 6px}
 
 /* boat band */
 .band{background:var(--dark-surface);color:var(--on-dark)}
@@ -304,9 +327,7 @@ footer a:hover{text-decoration:underline}
 .dev-banner{background:var(--gold-deep);color:#15130E;text-align:center;font-size:13px;font-weight:700;padding:10px 16px;letter-spacing:.01em}
 .dev-banner b{font-weight:800}
 </style>
-</head>
-<body>
-<div class="dev-banner">ΠΡΟΕΠΙΣΚΟΠΗΣΗ ΑΝΑΣΧΕΔΙΑΣΜΟΥ — <b>δεν είναι το ζωντανό site.</b> Το azclean.gr δεν έχει αλλάξει. Η κράτηση online είναι demo, δεν είναι ακόμα συνδεδεμένη με πραγματικό Setmore.</div>
+</head><body><div class="dev-banner">ΠΡΟΕΠΙΣΚΟΠΗΣΗ ΑΝΑΣΧΕΔΙΑΣΜΟΥ — <b>δεν είναι το ζωντανό site.</b> Το azclean.gr δεν έχει αλλάξει. Η κράτηση online είναι demo, δεν είναι ακόμα συνδεδεμένη με πραγματικό Setmore.</div>
 <div id="root"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
@@ -461,12 +482,15 @@ function Proof(){
       ),
       h("div", {className:"proof-row"},
         h(Rv, {delay:0},
-          h(Compare, {before:IMG.boatBefore, after:IMG.boatAfter, tall:true, start:50, labelL:"Πριν", labelR:"Μετά"}),
-          h("div", {className:"cap"}, h("b", null, "Σκάφος"), "Πραγματική δουλειά μας — πριν και μετά")
-        ),
-        h(Rv, {delay:80},
           h("div", {className:"shot"}, h("img", {src:IMG.sofaAfter, alt:"Γωνιακός καναπές μετά τον βιολογικό καθαρισμό", loading:"lazy"}), h("span", {className:"tag"}, "Μετά")),
           h("div", {className:"cap"}, h("b", null, "Γωνιακός καναπές"), "Πραγματική δουλειά μας — μετά τον καθαρισμό")
+        ),
+        h(Rv, {delay:80},
+          h("div", {className:"stat-panel"},
+            h("span", {className:"stars"}, "★★★★★"),
+            h("span", {className:"num"}, "5,0"),
+            h("p", null, "από 77 πραγματικές κριτικές Google — καμία δεν είναι αγορασμένη.")
+          )
         )
       ),
       h(Rv, {tag:"p", className:"proof-note"}, "Όλες οι φωτογραφίες παραπάνω είναι από πραγματικές δουλειές μας — όχι stock εικόνες.")
@@ -509,17 +533,20 @@ const STEPS = [
   ["Παίρνετε τιμή και ώρα","Απαντάμε με ακριβή τιμή και το πρώτο διαθέσιμο ραντεβού — συνήθως αυθημερόν ή την επόμενη μέρα. Η τιμή που λέμε είναι η τιμή που πληρώνετε."],
   ["Ερχόμαστε και το κάνουμε","Συνεργείο με στολή και δικό του εξοπλισμό. Η δουλειά κρατάει μία με τρεις ώρες."],
 ];
+const STEP_TABS = ["Καλείτε", "Κλείνετε ραντεβού", "Χαλαρώνετε"];
+const STEP_MEDIA = [null, IMG.mattressAfter, IMG.sofaAfter];
 function HowItWorks(){
   return h("section", {style:{paddingTop:0}},
-    h("div", {className:"wrap split"},
-      h("div", {className:"sticky-lede"},
-        h(Rv, {className:"shead"}, h("span", {className:"no"}, "03"), h("span", {className:"label"}, "Πώς δουλεύει"), h("span", {className:"rule"})),
-        h(Rv, {tag:"p", className:"lede", delay:60}, "Τρία βήματα. Το πρώτο το κάνετε από τον καναπέ σας, με το κινητό.")
-      ),
-      h("div", {className:"steps"},
-        STEPS.map(([t,d],i) => h(Rv, {key:t, tag:"div", className:"step", delay:i*80},
-          h("span", {className:"num"}, "0"+(i+1)),
-          h("div", null, h("h3", {className:"h3"}, t), h("p", null, d))
+    h("div", {className:"wrap"},
+      h(Rv, {className:"shead"}, h("span", {className:"no"}, "03"), h("span", {className:"label"}, "Πώς δουλεύει"), h("span", {className:"rule"})),
+      h(Rv, {tag:"p", className:"lede", delay:60, style:{marginBottom:"40px"}}, "Τρία βήματα. Το πρώτο το κάνετε από τον καναπέ σας, με το κινητό."),
+      h("div", {className:"pcards"},
+        STEPS.map(([t,d],i) => h(Rv, {key:t, tag:"div", className:"pcard", delay:i*80},
+          STEP_MEDIA[i]
+            ? h("div", {className:"pcard-media"}, h("img", {src:STEP_MEDIA[i], alt:"", loading:"lazy"}), h("span", {className:"pcard-tab"}, "0"+(i+1)+" · "+STEP_TABS[i]))
+            : h("div", {className:"pcard-media solid"}, h("span", {className:"pcard-glyph"}, "0"+(i+1)), h("span", {className:"pcard-tab"}, "0"+(i+1)+" · "+STEP_TABS[i])),
+          h("h3", {className:"h3"}, t),
+          h("p", null, d)
         ))
       )
     )
@@ -703,9 +730,9 @@ function AreasFaq(){
 
 /* ---------- final CTA ---------- */
 function FinalCta(){
-  return h("section", null,
-    h("div", {className:"wrap"},
-      h(Rv, {className:"cta-band"},
+  return h("section", {style:{padding:0}},
+    h(Rv, {className:"cta-gold", tag:"div"},
+      h("div", {className:"cta-gold-inner"},
         h("div", null,
           h("span", {className:"eyebrow"}, "Τιμή"),
           h("h2", {className:"h2", style:{margin:"14px 0"}}, "Μία φωτογραφία, μία τιμή."),
@@ -713,13 +740,13 @@ function FinalCta(){
           h("div", {className:"acts"},
             h("a", {className:"btn btn-dark", href:"tel:"+TEL}, "Καλέστε "+TEL_DISPLAY),
             h("a", {className:"btn btn-ghost", href:WA_LINK, target:"_blank", rel:"noopener"}, "Στείλτε φωτογραφία"),
-            h("a", {className:"btn btn-gold", href:"#kratisi"}, "Κλείστε online")
+            h("a", {className:"btn btn-ghost", href:"#kratisi"}, "Κλείστε online")
           )
         ),
-        h("div", null,
+        h("div", {className:"sched"},
           h("span", {className:"eyebrow"}, "Ωράριο"),
-          h("p", {style:{color:"var(--text)",fontWeight:700,margin:"14px 0 6px"}}, "Δευτέρα – Παρασκευή", h("br"), "08:00 – 21:00"),
-          h("p", {style:{color:"var(--text)",fontWeight:700}}, "Σάββατο", h("br"), "09:00 – 18:00")
+          h("b", null, "Δευτέρα – Παρασκευή", h("br"), "08:00 – 21:00"),
+          h("b", null, "Σάββατο", h("br"), "09:00 – 18:00")
         )
       )
     )
@@ -773,5 +800,4 @@ function App(){
 
 ReactDOM.createRoot(document.getElementById("root")).render(h(App));
 </script>
-</body>
-</html>
+</body></html>
