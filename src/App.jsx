@@ -5,7 +5,6 @@ import Proof from "./components/Proof.jsx";
 import Services from "./components/Services.jsx";
 import HowItWorks from "./components/HowItWorks.jsx";
 import BoatBand from "./components/BoatBand.jsx";
-import Booking from "./components/Booking.jsx";
 import Testimonials from "./components/Testimonials.jsx";
 import AreasFaq from "./components/AreasFaq.jsx";
 import FinalCta from "./components/FinalCta.jsx";
@@ -19,8 +18,7 @@ export default function App() {
           this redesign actually replaces the live azclean.gr site. */}
       <div className="dev-banner">
         ΠΡΟΕΠΙΣΚΟΠΗΣΗ ΑΝΑΣΧΕΔΙΑΣΜΟΥ — <b>δεν είναι το ζωντανό site.</b> Το
-        azclean.gr δεν έχει αλλάξει. Η κράτηση online είναι demo, δεν είναι
-        ακόμα συνδεδεμένη με πραγματικό Setmore.
+        azclean.gr δεν έχει αλλάξει.
       </div>
 
       <Header />
@@ -31,7 +29,6 @@ export default function App() {
         <Services />
         <HowItWorks />
         <BoatBand />
-        <Booking />
         <Testimonials />
         <AreasFaq />
         <FinalCta />
