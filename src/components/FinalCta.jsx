@@ -15,7 +15,6 @@ export default function FinalCta() {
             <div className="acts">
               <a className="btn btn-dark" href={`tel:${TEL}`}>Καλέστε {TEL_DISPLAY}</a>
               <a className="btn btn-ghost" href={WA_LINK} target="_blank" rel="noopener">Στείλτε φωτογραφία</a>
-              <a className="btn btn-ghost" href="#kratisi">Κλείστε online</a>
             </div>
           </div>
           <div className="sched">

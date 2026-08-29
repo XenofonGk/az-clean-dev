@@ -5,7 +5,6 @@ const LINKS = [
   ["#apodeixi", "Η απόδειξη"],
   ["#ti", "Τι κάνουμε"],
   ["#skafi", "Σκάφη"],
-  ["#kratisi", "Κράτηση"],
   ["#perioxes", "Περιοχές"],
 ];
 
@@ -25,7 +24,7 @@ export default function Header() {
         </a>
         <nav className="navlinks" aria-label="Κύρια πλοήγηση">
           {LINKS.map(([href, label]) => (
-            <a key={href} href={href} className={href === "#kratisi" ? "cta-link" : undefined}>
+            <a key={href} href={href}>
               {label}
             </a>
           ))}

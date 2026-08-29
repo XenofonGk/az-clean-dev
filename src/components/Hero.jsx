@@ -1,5 +1,4 @@
 import Rv from "./Rv.jsx";
-import sofaAfter from "../assets/sofa-after.jpg";
 import { TEL, TEL_DISPLAY, WA_LINK } from "../data.js";
 
 export default function Hero() {
@@ -16,8 +15,7 @@ export default function Hero() {
           </Rv>
           <Rv className="acts" delay={200}>
             <a className="btn btn-dark" href={`tel:${TEL}`}>Καλέστε μας</a>
-            <a className="btn btn-gold" href="#kratisi">Κλείστε ραντεβού online</a>
-            <a className="btn btn-ghost" href={WA_LINK} target="_blank" rel="noopener">Στείλτε φωτογραφία</a>
+            <a className="btn btn-gold" href={WA_LINK} target="_blank" rel="noopener">Στείλτε φωτογραφία</a>
           </Rv>
           <Rv className="facts" delay={260}>
             <div className="fact">
@@ -35,10 +33,6 @@ export default function Hero() {
             </div>
           </Rv>
         </div>
-        <Rv className="hero-photo" delay={120}>
-          <img src={sofaAfter} alt="Γωνιακός καναπές μετά τον βιολογικό καθαρισμό" />
-          <div className="tag">Πραγματική δουλειά — Γλυφάδα</div>
-        </Rv>
       </div>
     </div>
   );
