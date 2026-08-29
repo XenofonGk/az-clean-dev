@@ -1,6 +1,5 @@
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
-import MarketingBanner from "./components/MarketingBanner.jsx";
 import Proof from "./components/Proof.jsx";
 import Services from "./components/Services.jsx";
 import HowItWorks from "./components/HowItWorks.jsx";
@@ -24,7 +23,6 @@ export default function App() {
       <Header />
       <main>
         <Hero />
-        <MarketingBanner />
         <Proof />
         <Services />
         <HowItWorks />
