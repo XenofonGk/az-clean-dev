@@ -165,10 +165,6 @@ section { padding: 112px 0; }
 @media (max-width: 760px) { .proof-row { grid-template-columns: 1fr; } }
 .proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-bottom: 26px; }
 @media (max-width: 900px) { .proof-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; } }
-.proof-stats { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; border-radius: 5px; box-shadow: var(--shadow-2); background: linear-gradient(150deg, var(--gold-deep), var(--gleam)); color: #15130e; padding: 24px 32px; }
-.proof-stats .stars { letter-spacing: 3px; font-size: 19px; opacity: 0.72; }
-.proof-stats .num { font-family: var(--serif); font-style: italic; font-weight: 600; font-size: 38px; line-height: 1; }
-.proof-stats p { font-size: 14.5px; font-weight: 600; margin: 0; max-width: 40ch; }
 .cmp { position: relative; width: 100%; overflow: hidden; touch-action: pan-y; cursor: ew-resize; background: #0e0c08; box-shadow: var(--shadow-2); border-radius: 5px; user-select: none; -webkit-user-select: none; aspect-ratio: 16 / 10; }
 .cmp.tall { aspect-ratio: 4 / 5; }
 .cmp img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
