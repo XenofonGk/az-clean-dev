@@ -14,6 +14,15 @@ export default function Hero() {
           <Rv tag="p" className="lede on-dark" delay={140}>
             Βιολογικός καθαρισμός καναπέ, στρωμάτων, χαλιών, αυτοκινήτου και σκάφους, στον χώρο σας.
           </Rv>
+          <Rv delay={170}>
+            <img
+              className="hero-photo"
+              src={heroBg}
+              alt="Συνεργείο AZ Clean σε δουλειά βιολογικού καθαρισμού σε δωμάτιο ξενοδοχείου"
+              width="1537"
+              height="1023"
+            />
+          </Rv>
           <Rv className="acts" delay={200}>
             <a className="btn btn-dark" href={`tel:${TEL}`}>Καλέστε μας</a>
             <a className="btn btn-gold" href={WA_LINK} target="_blank" rel="noopener">Στείλτε φωτογραφία</a>
