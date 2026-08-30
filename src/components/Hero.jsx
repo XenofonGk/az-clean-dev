@@ -1,16 +1,17 @@
 import Rv from "./Rv.jsx";
+import heroBg from "../assets/hero-bg.jpg";
 import { TEL, TEL_DISPLAY, WA_LINK } from "../data.js";
 
 export default function Hero() {
   return (
-    <div className="hero">
+    <div className="hero dark-section" style={{ backgroundImage: `url(${heroBg})` }}>
       <div className="wrap hero-grid">
         <div className="hero-copy">
           <Rv tag="span" className="eyebrow">ΓΛΥΦΑΔΑ · ΒΟΥΛΑ · ΒΟΥΛΙΑΓΜΕΝΗ</Rv>
           <Rv tag="h1" className="h1" delay={70}>
             Ο σωστός τρόπος <br />καθαρισμού.
           </Rv>
-          <Rv tag="p" className="lede" delay={140}>
+          <Rv tag="p" className="lede on-dark" delay={140}>
             Βιολογικός καθαρισμός καναπέ, στρωμάτων, χαλιών, αυτοκινήτου και σκάφους, στον χώρο σας.
           </Rv>
           <Rv className="acts" delay={200}>
@@ -21,7 +22,7 @@ export default function Hero() {
             <div className="fact">
               <span className="stars">★★★★★</span>
               <b>5,0</b>
-              <span>από 77 κριτικές Google</span>
+              <span>από 76 κριτικές Google</span>
             </div>
             <div className="fact">
               <b>Αυθημερόν</b>
