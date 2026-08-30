@@ -148,9 +148,23 @@ header { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, v
 .hero .facts { border-top-color: rgba(245, 241, 232, 0.2); }
 .hero .fact span { color: var(--on-dark-45); }
 .hero-grid { display: grid; grid-template-columns: 1fr; }
-@media (max-width: 940px) { .hero { padding: 64px 0 64px; } }
-@media (max-width: 640px) {
-  .hero::before { background: linear-gradient(175deg, rgba(19, 17, 12, 0.8) 0%, rgba(19, 17, 12, 0.92) 50%, rgba(19, 17, 12, 0.96) 100%); }
+.hero-photo {
+  display: none;
+}
+/* Below ~940px the text stack takes the full width, so a cropped cover
+   photo behind it loses most of the image. Instead, drop the background
+   crop entirely and show the whole, uncropped photo as its own block. */
+@media (max-width: 940px) {
+  .hero { padding: 64px 0 64px; background-image: none !important; }
+  .hero::before { display: none; }
+  .hero-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: var(--shadow-2);
+    margin: 26px 0 6px;
+  }
 }
 .hero-copy { max-width: 640px; }
 .hero-copy .eyebrow { margin-bottom: 20px; display: block; }
